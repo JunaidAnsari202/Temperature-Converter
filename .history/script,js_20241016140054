@@ -1,0 +1,26 @@
+const calcius = document.querySelector("#calcius");
+const farenheit = document.querySelector("#farenheit");
+const kelvin = document.querySelector("#kelvin");
+    
+
+calcius.addEventListener("input",()=>{
+    let c=parseFloat(calcius.value);
+    let f=(c*9/5)+32;
+    let k=c+273.15;
+    farenheit.value=f;
+    kelvin.value=k;
+.addEventListener("input",()=>{
+    let k=parseFloat(kelvin.value);
+    let c=k-273.15;
+    let f=(k-273.15)*9/5+32;
+   calcius.value=c;
+    farenheit.value=f;
+})
+
+kelvin.addEventListener("input",()=>{
+    let k=parseFloat(kelvin.value);
+    let c=k-273.15;
+    let f=(k-273.15)*9/5+32;
+   calcius.value=c;
+    farenheit.value=f;
+})

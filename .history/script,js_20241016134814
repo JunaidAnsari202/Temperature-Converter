@@ -1,0 +1,3 @@
+const calcius = document.querySelector("#calcius");
+const fahrenheit = document.querySelector("fahrenheit");
+const kalvin
